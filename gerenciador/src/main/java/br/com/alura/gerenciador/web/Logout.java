@@ -25,7 +25,7 @@ public class Logout extends HttpServlet{
 		}*/
 		HttpSession session = req.getSession();
 		
-		session.removeAttribute("usuario.logado");
+		session.removeAttribute("usuarioLogado");
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/paginas/logout.html");
 		dispatcher.forward(req, resp);
 		//resp.sendRedirect("logout.html"); redirecionamento feito do lado do client 302

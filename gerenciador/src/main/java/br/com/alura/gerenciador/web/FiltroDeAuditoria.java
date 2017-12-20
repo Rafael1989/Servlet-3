@@ -38,7 +38,7 @@ public class FiltroDeAuditoria implements Filter{
 		}*/
 		
 		HttpSession session = req.getSession();
-		Usuario usuarioLogado = (Usuario) session.getAttribute("usuario.logado");
+		Usuario usuarioLogado = (Usuario) session.getAttribute("usuarioLogado");
 		
 		if(usuarioLogado != null) {
 			usuario = usuarioLogado.getEmail();

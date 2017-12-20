@@ -30,7 +30,7 @@ public class Login extends HttpServlet{
 			writer.println("<html><body>Usuário ou senha inválida</body></html>");
 		}else {
 			HttpSession session = req.getSession();
-			session.setAttribute("usuario.logado", usuario);
+			session.setAttribute("usuarioLogado", usuario);
 			//Cookie cookie = new Cookie("usuario.logado", email);
 			//resp.addCookie(cookie);
 			writer.println("<html><body>Usuário logado: " + email + "</body></html>");
